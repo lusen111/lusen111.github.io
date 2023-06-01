@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2023 | Alan</title>
+  <title>Hexo编译文档时JS或HTML混乱解决方案 | Alan</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Alan">
-<meta property="og:url" content="http://example.com/archives/2023/index.html">
+  <meta name="description" content="Hexo编译文档时JS或HTML混乱解决方案">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo编译文档时JS或HTML混乱解决方案">
+<meta property="og:url" content="http://example.com/2019/07/26/Hexo%E7%BC%96%E8%AF%91%E6%96%87%E6%A1%A3%E6%97%B6JS%E6%88%96HTML%E6%B7%B7%E4%B9%B1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="Alan">
+<meta property="og:description" content="Hexo编译文档时JS或HTML混乱解决方案">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-07-26T03:26:51.000Z">
+<meta property="article:modified_time" content="2023-06-01T14:58:37.151Z">
 <meta property="article:author" content="Alan-刘少">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Alan" type="application/atom+xml">
@@ -135,7 +140,7 @@
       
       
       <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
-        href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">
+        href="https://github.com/lusen111/lusen111.github.io" target="_blank">
         <img src="/img/forkme.png"
           class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
       
@@ -233,54 +238,199 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Hexo编译文档时JS或HTML混乱解决方案" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/06/01/hello-world/" class="archive-article-date">
-        <time datetime="2023-06-01T13:34:50.667Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/06/01/hello-world/" target="_blank">Hello World</a>
   
+    <h1 class="article-title" itemprop="name">
+      Hexo编译文档时JS或HTML混乱解决方案
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-          
+  
+  
+<a href="/2019/07/26/Hexo%E7%BC%96%E8%AF%91%E6%96%87%E6%A1%A3%E6%97%B6JS%E6%88%96HTML%E6%B7%B7%E4%B9%B1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="archive-article-date">
+        <time datetime="2019-07-26T03:26:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
+</a>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">258字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
+
   
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
+<li><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
+<li>博主使用的是**<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
+</ul>
+<blockquote>
+<p>之前为在 GitHub 博客上写自己的 html 网页，在 hexo 根目录下的 source 文件夹中放了自己的 js 文件，每次 <code>hexo g</code> 后，pubic 文件夹中的 js 文件就混乱了，与自己实际 js 不一致。</p>
+</blockquote>
+<h3 id="解决方案-跳过-hexo-渲染"><a href="#解决方案-跳过-hexo-渲染" class="headerlink" title="解决方案(跳过 hexo 渲染)"></a>解决方案(跳过 hexo 渲染)</h3><blockquote>
+<p><strong>Hexo 3.0 以上支持</strong><br>修改 Hexo 主目录下的 _config.yml 配置文件中的 <code>skip_render</code> 参数。</p>
+</blockquote>
+<span id="more"></span>
+
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">skip_render:</span> <span class="string">&quot;test.html&quot;</span>    <span class="comment"># source 文件夹下指定文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/*</span>    <span class="comment"># 单个文件夹下全部文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/*.md</span>    <span class="comment"># 单个文件夹下指定类型文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/**</span>    <span class="comment"># 单个文件夹下全部文件及子文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span>         <span class="comment"># 多个文件夹以及其他情况</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">test/*</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">test/*.html</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>博主自己的配置如下</p>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 跳过 hexo 渲染</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">anires/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">assets/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">gitment/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">baidu_sitepush/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">canvas_nest/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">docs/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;baidu_verify_QzGNSJ7F59.html&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.html&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.js&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">README.md</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.sh&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.txt&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注：若修改配置后不见效果，先执行 <code>hexo clean</code> 后再执行 <code>hexo g</code> 重新编译</p>
+</blockquote>
 
     
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2019/07/26/Hexo%E7%BC%96%E8%AF%91%E6%96%87%E6%A1%A3%E6%97%B6JS%E6%88%96HTML%E6%B7%B7%E4%B9%B1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/25/Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90%E7%A0%81%E4%BA%91%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo博客集成码云评论系统</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -301,18 +451,6 @@
   </div>
   
   
-	<script src="/lib/busuanzi.pure.js"></script>
-	
-  
-  
-	
-	<span id="busuanzi_container_site_pv" style="display:none">
-		本站总访问量<span id="busuanzi_value_site_pv"></span>次	
-	        <span class="post-meta-divider" >|</span>
-	</span>
-  	<span id="busuanzi_container_site_uv" style='display:none'>
-  		本站访客数<span id="busuanzi_value_site_uv"></span>人
-  	</span>
   
 </footer>
 
@@ -321,8 +459,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
@@ -407,6 +545,18 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">日记本</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
