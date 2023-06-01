@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Alan</title>
+  <title>Hexo博客使用gulp压缩静态资源 | Alan</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Alan">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Hexo博客使用gulp压缩静态资源">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客使用gulp压缩静态资源">
+<meta property="og:url" content="http://example.com/2023/06/01/7/index.html">
 <meta property="og:site_name" content="Alan">
+<meta property="og:description" content="Hexo博客使用gulp压缩静态资源">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-06-01T08:35:00.000Z">
+<meta property="article:modified_time" content="2023-06-01T15:11:13.889Z">
 <meta property="article:author" content="Alan-刘少">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Alan" type="application/atom+xml">
@@ -237,203 +238,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-10" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-7" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/10/" target="_blank">Linux下更改MySQL的存储目录</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/10/" class="archive-article-date">
-        <time datetime="2023-06-01T09:06:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h5 id="重要步骤：一定要先停止Mysql"><a href="#重要步骤：一定要先停止Mysql" class="headerlink" title="重要步骤：一定要先停止Mysql"></a>重要步骤：一定要先停止Mysql</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">service mysqld stop</span></span><br></pre></td></tr></table></figure>
-<h5 id="1、创建目标文件夹"><a href="#1、创建目标文件夹" class="headerlink" title="1、创建目标文件夹"></a>1、创建目标文件夹</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">mkdir</span> -p /data/mysql</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">chown</span> -R mysql.mysql /data/mysql/</span></span><br></pre></td></tr></table></figure>
-<h5 id="2、迁移命令"><a href="#2、迁移命令" class="headerlink" title="2、迁移命令"></a>2、迁移命令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">mysql_install_db --user=mysql --basedir=/usr --datadir=/data/mysql</span></span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2023/06/01/10/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/10/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/5/" target="_blank">Hexo博客集成Gitment评论</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/5/" class="archive-article-date">
-        <time datetime="2023-06-01T08:52:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
-<li><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
-<li>博主使用的是**<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
-</ul>
-<blockquote>
-<p>Gitment 是一位作者实现的一款基于 GitHub Issues 的评论系统。支持在前端直接引入，不需要任何后端代码。可以在页面进行登录、查看、评论、点赞等操作，同时有完整的 <code>Markdown</code> &#x2F; <code>GFM</code> 和代码高亮支持。尤为适合各种基于 GitHub Pages 的静态博客或项目页面。</p>
-</blockquote>
-    
-    <a class="article-more-a" href="/2023/06/01/5/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/5/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/7/" target="_blank">Hexo博客使用gulp压缩静态资源</a>
-  
+    <h1 class="article-title" itemprop="name">
+      Hexo博客使用gulp压缩静态资源
     </h1>
   
 
@@ -447,6 +259,27 @@
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">723字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">3分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
@@ -459,391 +292,30 @@
 </ul>
 <hr>
 <h3 id="1、全局安装gulp"><a href="#1、全局安装gulp" class="headerlink" title="1、全局安装gulp"></a>1、全局安装gulp</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install gulp -g</span><br><span class="line"><span class="comment"># 查看版本</span></span><br><span class="line">gulp -v</span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2023/06/01/7/#more">more >></a>
-    
-    
 
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/7/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-8" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/8/" target="_blank">Hexo博客添加helper-live2d动态模型插件</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/8/" class="archive-article-date">
-        <time datetime="2023-06-01T08:35:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
-<li><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
-<li>博主使用的是**<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
-<li>插件的github地址<a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d" title="hexo-helper-live2d">hexo-helper-live2d</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/xiazeyu/live2d-widget-models" title="live2d模型仓库">live2d模型仓库</a></li>
-<li>必须有Node环境 ➡️ <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f8b0a4f7a822">Linux下安装node和npm</a></li>
-</ul>
-<hr>
-    
-    <a class="article-more-a" href="/2023/06/01/8/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/8/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/6/" target="_blank">Hexo博客配置RSS插件</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/6/" class="archive-article-date">
-        <time datetime="2023-06-01T07:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
-<li><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
-<li>博主使用的是**<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
-</ul>
-<hr>
-<h3 id="1、安装rss插件"><a href="#1、安装rss插件" class="headerlink" title="1、安装rss插件"></a>1、安装rss插件</h3><blockquote>
+<span id="more"></span>
+<h3 id="2、安装gulp插件"><a href="#2、安装gulp插件" class="headerlink" title="2、安装gulp插件"></a>2、安装gulp插件</h3><blockquote>
 <p>在站点根目录下安装</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed</span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/2023/06/01/6/#more">more >></a>
-    
-    
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install gulp --save</span><br><span class="line">npm install gulp-minify-css --save</span><br><span class="line">npm install gulp-uglify --save</span><br><span class="line">npm install gulp-htmlmin --save</span><br><span class="line">npm install gulp-htmlclean --save</span><br><span class="line">npm install gulp-imagemin --save</span><br><span class="line"><span class="comment"># 解决【Gulp打包问题】 GulpUglifyError: unable to minify JavaScript</span></span><br><span class="line"><span class="comment"># 解决 gulp-uglify 压缩JavaScript 不兼容 es5 语法的问题</span></span><br><span class="line">npm install babel-core@6.26.3 --save</span><br><span class="line">npm install gulp-babel@7.0.1 --save</span><br><span class="line">npm install babel-preset-es2015@6.24.1 --save</span><br><span class="line"><span class="comment"># gulp-babel 取消严格模式方法(&quot;use strict&quot;)</span></span><br><span class="line">npm install babel-plugin-transform-remove-strict-mode --save</span><br></pre></td></tr></table></figure>
 
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/6/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/11/" target="_blank">Linux下安装Git</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/11/" class="archive-article-date">
-        <time datetime="2023-06-01T05:41:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h4 id="1、使用yum安装"><a href="#1、使用yum安装" class="headerlink" title="1、使用yum安装"></a>1、使用yum安装</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">yum -y install git</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">yum remove git</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2、源代码安装"><a href="#2、源代码安装" class="headerlink" title="2、源代码安装"></a>2、源代码安装</h4>
-    
-    <a class="article-more-a" href="/2023/06/01/11/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/11/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/3/" target="_blank">Hexo编译文档时JS或HTML混乱解决方案</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/3/" class="archive-article-date">
-        <time datetime="2023-06-01T03:26:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
-<li><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
-<li>博主使用的是**<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
-</ul>
 <blockquote>
-<p>之前为在 GitHub 博客上写自己的 html 网页，在 hexo 根目录下的 source 文件夹中放了自己的 js 文件，每次 <code>hexo g</code> 后，pubic 文件夹中的 js 文件就混乱了，与自己实际 js 不一致。</p>
+<p>问题：如果安装<code>gulp-imagemin</code>错误请执行以下语句<br><code>sudo npm i gulp-imagemin --unsafe-perms</code></p>
 </blockquote>
-<h3 id="解决方案-跳过-hexo-渲染"><a href="#解决方案-跳过-hexo-渲染" class="headerlink" title="解决方案(跳过 hexo 渲染)"></a>解决方案(跳过 hexo 渲染)</h3><blockquote>
-<p><strong>Hexo 3.0 以上支持</strong><br>修改 Hexo 主目录下的 _config.yml 配置文件中的 <code>skip_render</code> 参数。</p>
+<h3 id="3、创建gulpfile-js文件"><a href="#3、创建gulpfile-js文件" class="headerlink" title="3、创建gulpfile.js文件"></a>3、创建<code>gulpfile.js</code>文件</h3><blockquote>
+<p>在 Hexo 站点下新建<code>gulpfile.js</code>文件，文件内容如下：</p>
 </blockquote>
-    
-    <a class="article-more-a" href="/2023/06/01/3/#more">more >></a>
-    
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">&#x27;gulp&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> minifycss = <span class="built_in">require</span>(<span class="string">&#x27;gulp-minify-css&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">&#x27;gulp-uglify&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> htmlmin = <span class="built_in">require</span>(<span class="string">&#x27;gulp-htmlmin&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> htmlclean = <span class="built_in">require</span>(<span class="string">&#x27;gulp-htmlclean&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> imagemin = <span class="built_in">require</span>(<span class="string">&#x27;gulp-imagemin&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> babel = <span class="built_in">require</span>(<span class="string">&#x27;gulp-babel&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩css文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;minify-css&#x27;</span>, <span class="keyword">function</span> (<span class="params">done</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.<span class="title function_">src</span>(<span class="string">&#x27;./public/**/*.css&#x27;</span>)</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">minifycss</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">    <span class="title function_">done</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩html文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;minify-html&#x27;</span>, <span class="keyword">function</span> (<span class="params">done</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.<span class="title function_">src</span>(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">htmlclean</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">htmlmin</span>(&#123;</span><br><span class="line">            <span class="attr">removeComments</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">minifyJS</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">minifyCSS</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">minifyURLs</span>: <span class="literal">true</span>,</span><br><span class="line">        &#125;))</span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">    <span class="title function_">done</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩js文件</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;minify-js&#x27;</span>, <span class="keyword">function</span> (<span class="params">done</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.<span class="title function_">src</span>([<span class="string">&#x27;./public/**/*.js&#x27;</span>, <span class="string">&#x27;!./public/**/*.min.js&#x27;</span>])</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">babel</span>(&#123;</span><br><span class="line">            <span class="comment">//将ES6代码转译为可执行的JS代码</span></span><br><span class="line">            <span class="attr">presets</span>: [<span class="string">&#x27;es2015&#x27;</span>] <span class="comment">// es5检查机制</span></span><br><span class="line">        &#125;))</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">uglify</span>())</span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">    <span class="title function_">done</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩 public/images 目录内图片(Version&lt;3)</span></span><br><span class="line"><span class="comment">// gulp.task(&#x27;minify-images&#x27;, function () &#123;</span></span><br><span class="line"><span class="comment">//     gulp.src(&#x27;./public/images/**/*.*&#x27;)</span></span><br><span class="line"><span class="comment">//         .pipe(imagemin(&#123;</span></span><br><span class="line"><span class="comment">//             optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）</span></span><br><span class="line"><span class="comment">//             progressive: true, //类型：Boolean 默认：false 无损压缩jpg图片</span></span><br><span class="line"><span class="comment">//             interlaced: false, //类型：Boolean 默认：false 隔行扫描gif进行渲染</span></span><br><span class="line"><span class="comment">//             multipass: false, //类型：Boolean 默认：false 多次优化svg直到完全优化</span></span><br><span class="line"><span class="comment">//         &#125;))</span></span><br><span class="line"><span class="comment">//         .pipe(gulp.dest(&#x27;./public/images&#x27;));</span></span><br><span class="line"><span class="comment">// &#125;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 压缩 public/images 目录内图片(Version&gt;3)</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;minify-images&#x27;</span>, <span class="keyword">function</span> (<span class="params">done</span>) &#123;</span><br><span class="line">    gulp.<span class="title function_">src</span>(<span class="string">&#x27;./public/images/**/*.*&#x27;</span>)</span><br><span class="line">        .<span class="title function_">pipe</span>(<span class="title function_">imagemin</span>([</span><br><span class="line">            imagemin.<span class="title function_">gifsicle</span>(&#123;<span class="attr">interlaced</span>: <span class="literal">true</span>&#125;),</span><br><span class="line">            imagemin.<span class="title function_">jpegtran</span>(&#123;<span class="attr">progressive</span>: <span class="literal">true</span>&#125;),</span><br><span class="line">            imagemin.<span class="title function_">optipng</span>(&#123;<span class="attr">optimizationLevel</span>: <span class="number">5</span>&#125;),</span><br><span class="line">            imagemin.<span class="title function_">svgo</span>(&#123;</span><br><span class="line">                <span class="attr">plugins</span>: [</span><br><span class="line">                    &#123;<span class="attr">removeViewBox</span>: <span class="literal">true</span>&#125;,</span><br><span class="line">                    &#123;<span class="attr">cleanupIDs</span>: <span class="literal">false</span>&#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;)</span><br><span class="line">        ]))</span><br><span class="line">        .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public/images&#x27;</span>));</span><br><span class="line">    <span class="title function_">done</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//4.0以前的写法 </span></span><br><span class="line"><span class="comment">//gulp.task(&#x27;default&#x27;, [</span></span><br><span class="line"><span class="comment">//  &#x27;minify-html&#x27;, &#x27;minify-css&#x27;, &#x27;minify-js&#x27;, &#x27;minify-images&#x27;</span></span><br><span class="line"><span class="comment">//]);</span></span><br><span class="line"><span class="comment">//4.0以后的写法</span></span><br><span class="line"><span class="comment">// 执行 gulp 命令时执行的任务</span></span><br><span class="line">gulp.<span class="title function_">task</span>(<span class="string">&#x27;default&#x27;</span>, gulp.<span class="title function_">series</span>(gulp.<span class="title function_">parallel</span>(<span class="string">&#x27;minify-html&#x27;</span>, <span class="string">&#x27;minify-css&#x27;</span>, <span class="string">&#x27;minify-js&#x27;</span>, <span class="string">&#x27;minify-images&#x27;</span>)), <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;----------gulp Finished----------&quot;</span>);</span><br><span class="line">    <span class="comment">// Do something after a, b, and c are finished.</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、创建-babelrc文件"><a href="#4、创建-babelrc文件" class="headerlink" title="4、创建.babelrc文件"></a>4、创建<code>.babelrc</code>文件</h3><blockquote>
+<p>在 Hexo 站点下新建<code>.babelrc</code>文件，文件内容如下：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&#x27;presets&#x27;</span>: [<span class="string">&#x27;es2015&#x27;</span>],</span><br><span class="line">    <span class="string">&quot;plugins&quot;</span>: [<span class="string">&quot;transform-remove-strict-mode&quot;</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、静态资源压缩"><a href="#5、静态资源压缩" class="headerlink" title="5、静态资源压缩"></a>5、静态资源压缩</h3><blockquote>
+<p>只需要每次在执行 <code>generate</code> 命令后执行 <code>gulp</code> 就可以实现对静态资源的压缩</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">gulp</span><br></pre></td></tr></table></figure>
     
 
     
@@ -868,16 +340,85 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/3/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/06/01/7/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2023/06/01/5/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hexo博客集成Gitment评论
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/06/01/8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo博客添加helper-live2d动态模型插件</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -898,284 +439,14 @@
 
 
 
-  
-    <article id="post-4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/4/" target="_blank">Hexo博客集成码云评论系统</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/4/" class="archive-article-date">
-        <time datetime="2023-06-01T02:39:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
-<li><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
-<li>博主使用的是**<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
-</ul>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
-<p>giteement系统是基于<a target="_blank" rel="noopener" href="https://github.com/imsun/gitment">gitment</a>的源码开发和扩展的 ➡️ <a target="_blank" rel="noopener" href="https://gitee.com/zhousiwei/giteement">https://gitee.com/zhousiwei/giteement</a><br><a target="_blank" rel="noopener" href="https://gitee.com/zhousiwei/giteement">giteement</a>还在继续维护优化中…欢迎小伙伴们加入一起维护</p>
-</blockquote>
-    
-    <a class="article-more-a" href="/2023/06/01/4/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/4/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/9/" target="_blank">IDEA设置后端代码开发规范</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/9/" class="archive-article-date">
-        <time datetime="2023-06-01T02:33:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h5 id="1、IDEA-配置svn"><a href="#1、IDEA-配置svn" class="headerlink" title="1、IDEA 配置svn"></a>1、IDEA 配置svn</h5><p>提交svn报错：<img src="/yilia-plus-demo/images/2743275-ef2b3fcbeb66c50b.png"></p>
-    
-    <a class="article-more-a" href="/2023/06/01/9/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">日记本</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/9/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/06/01/1/" target="_blank">Git彻底删除历史提交记录的方法</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/06/01/1/" class="archive-article-date">
-        <time datetime="2023-06-01T02:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-01</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h6 id="1、查看Git提交记录"><a href="#1、查看Git提交记录" class="headerlink" title="1、查看Git提交记录"></a>1、查看Git提交记录</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">git <span class="built_in">log</span></span></span><br></pre></td></tr></table></figure>
-<hr>
-<h6 id="2、找到需要回滚到的提交点，复制它的hash值"><a href="#2、找到需要回滚到的提交点，复制它的hash值" class="headerlink" title="2、找到需要回滚到的提交点，复制它的hash值"></a>2、找到需要回滚到的提交点，复制它的hash值</h6><h2 id=""><a href="#" class="headerlink" title=""></a><img src="/yilia-plus-demo/images/2743275-f79de5b6d7280d81.png"><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">git reset --hard 你复制的<span class="built_in">hash</span>值</span></span><br></pre></td></tr></table></figure><br>
-    
-    <a class="article-more-a" href="/2023/06/01/1/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">日记本</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/06/01/1/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -1203,8 +474,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
